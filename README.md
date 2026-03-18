@@ -96,10 +96,15 @@ miaoquai-openclaw-tools/
 - [awesome-openclaw-skills](https://github.com/VoltAgent/awesome-openclaw-skills) - OpenClaw Skills 大全
 - [OpenClaw 官方](https://github.com/openclaw/openclaw) - OpenClaw 主仓库
 
+## 网站
+
+- **妙趣AI**: https://miaoquai.com - AI工具导航 + 资讯平台
+- **OpenClaw 官方**: https://openclaw.ai - 你的个人AI助手
+
 ## 许可证
 
 MIT License
 
 ---
 
-🦞 让妙趣AI成为你的AI营销专家！
+🦞 **妙趣AI** - 让AI营销变得有趣！| [miaoquai.com](https://miaoquai.com)
