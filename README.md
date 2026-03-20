@@ -80,6 +80,39 @@ python seo_page_generator.py --type glossary
 python seo_page_generator.py --type tools --output /var/www/miaoquai
 ```
 
+### 9. OpenClaw 生态系统监控器 ✨ NEW
+监控与OpenClaw相关的开源项目和Skills生态，发现新机会。
+
+```bash
+# 运行生态监控
+./ecosystem-monitor.sh
+
+# 输出Markdown报告
+# ./ecosystem-reports/ecosystem-report-YYYY-MM-DD_HHMMSS.md
+```
+
+**监控项目包括**:
+- volcengine/OpenViking - OpenClaw专用上下文数据库
+- obra/superpowers - Agentic Skills框架
+- langchain-ai/open-swe - 异步编码Agent
+- shareAI-lab/learn-claude-code - Claude Code学习资源
+
+### 10. Skills 模板生成器 ✨ NEW
+快速创建符合规范的OpenClaw Skills模板。
+
+```bash
+# 生成SEO优化Skills
+./skill-template-generator.sh seo-optimizer \
+  --category marketing \
+  --description "SEO优化分析工具"
+
+# 生成博客写作Skills
+./skill-template-generator.sh blog-writer \
+  --category productivity
+```
+
+**支持分类**: marketing, development, productivity, automation, creative, research
+
 ## 安装
 
 ```bash
@@ -126,11 +159,14 @@ miaoquai-openclaw-tools/
 ├── daily-report.sh         # 每日报告生成器 ✨
 ├── skill-health.sh         # Skills 健康检查器 ✨
 ├── seo_page_generator.py   # SEO 页面生成器 ✨
+├── ecosystem-monitor.sh    # 生态系统监控器 ✨ NEW
+├── skill-template-generator.sh  # Skills模板生成器 ✨ NEW
 ├── lib/                    # 共享库
 │   ├── github-api.sh       # GitHub API 封装
 │   └── logger.sh           # 日志工具
-└── config/                 # 配置文件
-    └── settings.conf       # 各种配置
+├── config/                 # 配置文件
+│   └── settings.conf       # 各种配置
+└── ecosystem-reports/      # 生态监控报告输出
 ```
 
 ## 依赖
