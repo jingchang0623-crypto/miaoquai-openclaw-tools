@@ -80,6 +80,29 @@ python seo_page_generator.py --type glossary
 python seo_page_generator.py --type tools --output /var/www/miaoquai
 ```
 
+### 9. Cron 任务管理器 ✨ NEW
+管理和监控 OpenClaw 定时任务的完整工具。
+
+```bash
+# 列出所有任务
+./cron-manager.sh list
+
+# 健康检查
+./cron-manager.sh health
+
+# 查看日志
+./cron-manager.sh logs [job_id]
+
+# 查看执行历史
+./cron-manager.sh history <job_id>
+
+# 导出配置
+./cron-manager.sh export backup.json
+
+# 立即执行任务
+./cron-manager.sh run <job_id>
+```
+
 ### 9. OpenClaw 生态系统监控器 ✨ NEW
 监控与OpenClaw相关的开源项目和Skills生态，发现新机会。
 
@@ -161,6 +184,7 @@ miaoquai-openclaw-tools/
 ├── seo_page_generator.py   # SEO 页面生成器 ✨
 ├── ecosystem-monitor.sh    # 生态系统监控器 ✨ NEW
 ├── skill-template-generator.sh  # Skills模板生成器 ✨ NEW
+├── cron-manager.sh         # Cron 任务管理器 ✨ NEW
 ├── lib/                    # 共享库
 │   ├── github-api.sh       # GitHub API 封装
 │   └── logger.sh           # 日志工具
