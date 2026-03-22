@@ -136,6 +136,33 @@ python seo_page_generator.py --type tools --output /var/www/miaoquai
 
 **支持分类**: marketing, development, productivity, automation, creative, research
 
+### 11. Skills 效果分析器 ✨ NEW
+分析 Skills 使用效果，提供优化建议和评分。
+
+```bash
+# 完整分析（生成 Markdown 报告）
+./skill-performance-analyzer.sh
+
+# 快速统计
+./skill-performance-analyzer.sh -t quick
+
+# 分析 trending 项目
+./skill-performance-analyzer.sh -t trending
+
+# JSON 格式输出
+./skill-performance-analyzer.sh -o json
+
+# 报告输出位置
+# ./skill-reports/skill-analysis-YYYY-MM-DD_HHMMSS.md
+```
+
+**分析维度**:
+- SKILL.md 完整度
+- README 文档质量
+- 工具清单配置
+- 代码行数统计
+- 综合评分 (0-100)
+
 ## 安装
 
 ```bash
