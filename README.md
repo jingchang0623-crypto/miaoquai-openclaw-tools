@@ -163,6 +163,29 @@ python seo_page_generator.py --type tools --output /var/www/miaoquai
 - 代码行数统计
 - 综合评分 (0-100)
 
+### 12. Agent 框架对比器 ✨ NEW (2026-03-25)
+比较 OpenClaw 与 DeerFlow、ruflo、Claude Code 等 AI Agent 框架的功能差异。
+
+```bash
+# 输出完整对比表格
+./agent-framework-comparator.sh -t
+
+# 对比 DeerFlow
+./agent-framework-comparator.sh -c deer-flow
+
+# 对比 ruflo
+./agent-framework-comparator.sh -c ruflo
+
+# 智能推荐
+./agent-framework-comparator.sh -r
+```
+
+**今日 Trending 发现** 🔥:
+- 🦌 **bytedance/deer-flow** - SuperAgent harness (42,987 ⭐, +4,319 today)
+- 🌊 **ruvnet/ruflo** - Claude 多Agent编排平台 (24,982 ⭐)
+- 📰 **mvanhorn/last30days-skill** - AI研究技能 (5,443 ⭐)
+- 🔷 **hesreallyhim/awesome-claude-code** - Claude Code 技能列表
+
 ## 安装
 
 ```bash
@@ -212,12 +235,14 @@ miaoquai-openclaw-tools/
 ├── ecosystem-monitor.sh    # 生态系统监控器 ✨ NEW
 ├── skill-template-generator.sh  # Skills模板生成器 ✨ NEW
 ├── cron-manager.sh         # Cron 任务管理器 ✨ NEW
+├── agent-framework-comparator.sh  # Agent框架对比器 ✨ NEW
 ├── lib/                    # 共享库
 │   ├── github-api.sh       # GitHub API 封装
 │   └── logger.sh           # 日志工具
 ├── config/                 # 配置文件
 │   └── settings.conf       # 各种配置
-└── ecosystem-reports/      # 生态监控报告输出
+├── ecosystem-reports/      # 生态监控报告输出
+└── skill-reports/         # Skills 分析报告
 ```
 
 ## 依赖
