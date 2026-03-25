@@ -186,6 +186,34 @@ python seo_page_generator.py --type tools --output /var/www/miaoquai
 - 📰 **mvanhorn/last30days-skill** - AI研究技能 (5,443 ⭐)
 - 🔷 **hesreallyhim/awesome-claude-code** - Claude Code 技能列表
 
+### 14. GitHub Trending 监控器 ✨ NEW
+实时监控 GitHub Trending 上的 OpenClaw 相关项目，生成每日趋势报告。
+
+```bash
+# 运行监控
+./trending-monitor.sh
+
+# 报告输出位置
+# /var/www/miaoquai/reports/trending-YYYY-MM-DD.md
+```
+
+### 15. Skills 使用追踪器 ✨ NEW
+追踪本地 OpenClaw Skills 的使用情况，生成使用统计和效果分析报告。
+
+```bash
+# 记录技能使用
+./skill-usage-tracker.sh track <skill_name> [success|fail]
+
+# 生成使用报告
+./skill-usage-tracker.sh report
+
+# 显示统计
+./skill-usage-tracker.sh stats
+
+# 报告输出位置
+# /var/www/miaoquai/reports/skill-usage-YYYY-MM-DD.md
+```
+
 ## 安装
 
 ```bash
@@ -236,6 +264,8 @@ miaoquai-openclaw-tools/
 ├── skill-template-generator.sh  # Skills模板生成器 ✨ NEW
 ├── cron-manager.sh         # Cron 任务管理器 ✨ NEW
 ├── agent-framework-comparator.sh  # Agent框架对比器 ✨ NEW
+├── trending-monitor.sh            # GitHub Trending 监控器 ✨ NEW
+├── skill-usage-tracker.sh        # Skills 使用追踪器 ✨ NEW
 ├── lib/                    # 共享库
 │   ├── github-api.sh       # GitHub API 封装
 │   └── logger.sh           # 日志工具
