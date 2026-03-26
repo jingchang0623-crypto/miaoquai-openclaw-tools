@@ -214,6 +214,32 @@ python seo_page_generator.py --type tools --output /var/www/miaoquai
 # /var/www/miaoquai/reports/skill-usage-YYYY-MM-DD.md
 ```
 
+### 16. AI News RSS 聚合器 ✨ NEW (2026-03-27)
+自动抓取各大AI源的RSS新闻，生成内容摘要和报告。
+
+```bash
+# 抓取所有源 (默认)
+./ai-news-rss-fetcher.sh
+
+# 抓取指定源
+./ai-news-rss-fetcher.sh openai anthropic
+
+# 列出所有可用源
+./ai-news-rss-fetcher.sh list
+
+# 报告输出位置
+# /var/www/miaoquai/rss/ai-news-YYYY-MM-DD.md
+```
+
+**支持的源**:
+- OpenAI Blog
+- Anthropic Blog
+- Hugging Face Blog
+- The Gradient
+- MIT Tech Review
+- TechCrunch AI
+- Wired AI
+
 ## 安装
 
 ```bash
@@ -266,6 +292,7 @@ miaoquai-openclaw-tools/
 ├── agent-framework-comparator.sh  # Agent框架对比器 ✨ NEW
 ├── trending-monitor.sh            # GitHub Trending 监控器 ✨ NEW
 ├── skill-usage-tracker.sh        # Skills 使用追踪器 ✨ NEW
+├── ai-news-rss-fetcher.sh        # AI News RSS 聚合器 ✨ NEW
 ├── lib/                    # 共享库
 │   ├── github-api.sh       # GitHub API 封装
 │   └── logger.sh           # 日志工具
