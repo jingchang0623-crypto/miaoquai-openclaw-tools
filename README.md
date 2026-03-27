@@ -240,6 +240,29 @@ python seo_page_generator.py --type tools --output /var/www/miaoquai
 - TechCrunch AI
 - Wired AI
 
+### 17. 社交媒体内容聚合器 ✨ NEW (2026-03-28)
+自动收集 Twitter/X、GitHub 等平台的 OpenClaw 相关内容，生成适合妙趣网站发布的结构化摘要。
+
+```bash
+# 运行聚合
+./social-media-aggregator.sh run
+
+# 查看配置
+./social-media-aggregator.sh config
+
+# 测试连接
+./social-media-aggregator.sh test
+
+# 报告输出位置
+# /var/www/miaoquai/social/social-YYYY-MM-DD.md
+```
+
+**功能特性**:
+- GitHub 项目热点追踪
+- 社区动态收集
+- 自动化 Markdown 报告生成
+- 可选 Discord/Webhook 推送
+
 ## 安装
 
 ```bash
@@ -293,6 +316,7 @@ miaoquai-openclaw-tools/
 ├── trending-monitor.sh            # GitHub Trending 监控器 ✨ NEW
 ├── skill-usage-tracker.sh        # Skills 使用追踪器 ✨ NEW
 ├── ai-news-rss-fetcher.sh        # AI News RSS 聚合器 ✨ NEW
+├── social-media-aggregator.sh     # 社交媒体内容聚合器 ✨ NEW
 ├── lib/                    # 共享库
 │   ├── github-api.sh       # GitHub API 封装
 │   └── logger.sh           # 日志工具
