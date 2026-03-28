@@ -263,6 +263,32 @@ python seo_page_generator.py --type tools --output /var/www/miaoquai
 - 自动化 Markdown 报告生成
 - 可选 Discord/Webhook 推送
 
+### 18. Trending Skill 生成器 ✨ NEW (2026-03-29)
+根据 GitHub Trending 自动生成 OpenClaw Skills，帮助快速了解热门 AI 项目。
+
+```bash
+# 生成 Skills (默认 5 个)
+./trending-skill-generator.sh
+
+# 预览模式 (不生成文件)
+./trending-skill-generator.sh --dry-run
+
+# 指定生成数量
+./trending-skill-generator.sh --max 10
+
+# 过滤类别
+./trending-skill-generator.sh --category AI
+
+# 输出目录
+# ./generated-skills/
+```
+
+**功能特性**:
+- 自动获取 GitHub Trending AI 项目
+- 生成 OpenClaw Skill 格式文档
+- 自动分类 (development/marketing/research)
+- 批量生成多个项目的 Skill 模板
+
 ## 安装
 
 ```bash
@@ -317,13 +343,15 @@ miaoquai-openclaw-tools/
 ├── skill-usage-tracker.sh        # Skills 使用追踪器 ✨ NEW
 ├── ai-news-rss-fetcher.sh        # AI News RSS 聚合器 ✨ NEW
 ├── social-media-aggregator.sh     # 社交媒体内容聚合器 ✨ NEW
+├── trending-skill-generator.sh    # Trending Skill 生成器 ✨ NEW
 ├── lib/                    # 共享库
 │   ├── github-api.sh       # GitHub API 封装
 │   └── logger.sh           # 日志工具
 ├── config/                 # 配置文件
 │   └── settings.conf       # 各种配置
 ├── ecosystem-reports/      # 生态监控报告输出
-└── skill-reports/         # Skills 分析报告
+├── skill-reports/         # Skills 分析报告
+└── generated-skills/       # 自动生成的 Skills
 ```
 
 ## 依赖
