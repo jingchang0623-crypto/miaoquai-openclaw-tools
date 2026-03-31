@@ -289,6 +289,26 @@ python seo_page_generator.py --type tools --output /var/www/miaoquai
 - 自动分类 (development/marketing/research)
 - 批量生成多个项目的 Skill 模板
 
+### 19. Skill Showcase 生成器 ✨ NEW (2026-04-01)
+快速生成 OpenClaw Skill 展示页面，用于文档和营销。
+
+```bash
+# 生成技能展示页面
+./skill-showcase-generator.sh news-aggregator "AI新闻聚合器" -c web
+
+# 查看帮助
+./skill-showcase-generator.sh --help
+
+# 输出目录
+# ./skill-showcase/
+```
+
+**功能特性**:
+- 一键生成精美的技能展示 HTML 页面
+- 支持分类 (web|ai|dev|automation|api|data)
+- 自动添加妙趣风格的设计元素
+- 包含安装指南和使用示例
+
 ## 安装
 
 ```bash
