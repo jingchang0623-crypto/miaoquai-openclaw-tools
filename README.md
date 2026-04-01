@@ -309,6 +309,42 @@ python seo_page_generator.py --type tools --output /var/www/miaoquai
 - 自动添加妙趣风格的设计元素
 - 包含安装指南和使用示例
 
+### 20. OpenClaw Agent Starter Kit ✨ NEW (2026-04-02) 🔥
+一键创建标准化的 OpenClaw Agent 项目，快速搭建你的 AI Agent。
+
+```bash
+# 创建一个营销 Agent
+./openclaw-agent-starter.sh my-marketer -t marketing -d "AI营销专家" -a "张三" -g
+
+# 创建一个编程 Agent 并推送到 GitHub
+./openclaw-agent-starter.sh my-coder -t coding -d "编程助手" -g --push
+
+# 查看所有选项
+./openclaw-agent-starter.sh --help
+```
+
+**支持的 Agent 类型**:
+- `assistant` - 通用助手
+- `marketing` - AI营销专家
+- `coding` - 编程助手
+- `data` - 数据分析师
+- `research` - 研究助手
+
+**生成的项目结构**:
+```
+my-agent/
+├── AGENTS.md         # Agent 工作指南
+├── SOUL.md           # Agent 人设
+├── USER.md           # 用户配置
+├── TOOLS.md          # 工具配置
+├── MEMORY.md         # 长期记忆
+├── identity/         # 身份文件
+├── skills/           # Skills
+├── memory/           # 每日记忆
+├── scripts/          # 自动化脚本
+└── .openclaw/        # OpenClaw 配置
+```
+
 ## 安装
 
 ```bash
@@ -364,6 +400,8 @@ miaoquai-openclaw-tools/
 ├── ai-news-rss-fetcher.sh        # AI News RSS 聚合器 ✨ NEW
 ├── social-media-aggregator.sh     # 社交媒体内容聚合器 ✨ NEW
 ├── trending-skill-generator.sh    # Trending Skill 生成器 ✨ NEW
+├── skill-showcase-generator.sh    # Skill 展示生成器 ✨ NEW
+├── openclaw-agent-starter.sh      # Agent 项目脚手架 ✨ NEW 🔥
 ├── lib/                    # 共享库
 │   ├── github-api.sh       # GitHub API 封装
 │   └── logger.sh           # 日志工具
