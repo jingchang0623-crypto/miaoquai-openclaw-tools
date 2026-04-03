@@ -4,7 +4,37 @@
 
 ## 工具列表
 
-### 1. GitHub Trending 监控脚本
+### 1. Discord 社区运营自动化工具 ✨ NEW (2026-04-04) 🔥
+自动化 Discord 社区运营，支持每日早报、踩坑实录、工具推荐等内容自动发布。
+
+```bash
+# 发布每日早报
+./discord-community-auto.sh daily
+
+# 发布踩坑实录
+./discord-community-auto.sh troubleshoot
+
+# 发布工具推荐
+./discord-community-auto.sh tool
+
+# 测试预览（不发送）
+./discord-community-auto.sh test
+```
+
+**功能特性**:
+- 自动获取 AI 热点话题
+- 生成妙趣风格的社区内容
+- Discord API 直接发送
+- 发布历史记录
+- 支持定时任务
+
+**环境变量**:
+```bash
+export DISCORD_BOT_TOKEN="your_bot_token"
+export DISCORD_CHANNEL_ID="1483699648890802201"
+```
+
+### 2. GitHub Trending 监控脚本
 自动追踪 OpenClaw 相关的热门项目，帮助发现最新技术和工具。
 
 ```bash
@@ -383,6 +413,7 @@ python seo_page_generator.py --type glossary --count 20
 ```
 miaoquai-openclaw-tools/
 ├── README.md
+├── discord-community-auto.sh # Discord 社区运营自动化 ✨ NEW 🔥
 ├── github-trending.sh      # GitHub Trending 监控
 ├── skill-discovery.sh      # Skill 发现器
 ├── content-helper.sh       # 内容生成助手
