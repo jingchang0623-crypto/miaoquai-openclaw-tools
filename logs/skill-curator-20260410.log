@@ -1,0 +1,23 @@
+[2026-04-10 06:03:38] [INFO] 🦞 OpenClaw Skill Curator 初始化中...
+[2026-04-10 06:03:38] [INFO] ✅ 初始化完成
+[2026-04-10 06:03:47] [INFO] 🦞 OpenClaw Skill Curator 初始化中...
+[2026-04-10 06:03:47] [INFO] ✅ 初始化完成
+[2026-04-10 06:03:47] [INFO] 🔍 从 GitHub 搜索 OpenClaw Skills...
+[2026-04-10 06:03:47] [DEBUG] 搜索: openclaw skill
+[2026-04-10 06:03:47] [DEBUG] 搜索: openclaw skills
+[2026-04-10 06:03:47] [DEBUG] 搜索: clawbot skill
+[2026-04-10 06:03:47] [DEBUG] 搜索: moltbot skill
+[2026-04-10 06:03:47] [INFO] ✅ 从 GitHub 发现 0 个 Skills
+[2026-04-10 06:03:47] [INFO] 📚 从 Awesome 列表获取 Skills...
+[2026-04-10 06:03:47] [DEBUG] 获取: VoltAgent/awesome-openclaw-skills
+[2026-04-10 06:03:48] [DEBUG] 获取: rylena/awesome-openclaw
+[2026-04-10 06:03:48] [DEBUG] 获取: vincentkoc/awesome-openclaw
+[2026-04-10 06:03:49] [INFO] ✅ 从 Awesome 列表发现 0 个 Skills
+[2026-04-10 06:03:49] [INFO] 📝 生成推荐报告...
+[2026-04-10 06:03:49] [INFO] 🔍 评估 Skills 质量...
+[2026-04-10 06:03:49] [INFO] ✅ 报告已生成: /root/github/miaoquai-openclaw-tools/curated-reports/skill-curation-2026-04-10.md
+[2026-04-10 06:03:49] [INFO] 📊 本周发现摘要:
+[2026-04-10 06:03:49] [INFO] 🚀 自动提交到 GitHub...
+[2026-04-10 06:03:50] [INFO] ✅ 已成功提交到 GitHub
+[2026-04-10 06:03:50] [INFO] 💡 考虑提交 PR 到 awesome-openclaw-skills?
+[2026-04-10 06:03:50] [INFO]    访问: https://github.com/VoltAgent/awesome-openclaw-skills

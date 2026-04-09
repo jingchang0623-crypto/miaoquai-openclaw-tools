@@ -4,7 +4,32 @@
 
 ## 工具列表
 
-### 1. Discord 社区运营自动化工具 ✨ NEW (2026-04-04) 🔥
+### 1. OpenClaw Skill Curator ✨ NEW (2026-04-10) 🔥
+智能发现、评估和推荐 OpenClaw Skills，自动生成精选周报。
+
+```bash
+# 运行完整的 Skills 发现流程
+./openclaw-skill-curator.sh
+
+# 仅生成报告
+./openclaw-skill-curator.sh report
+
+# 查看帮助
+./openclaw-skill-curator.sh help
+```
+
+**功能特性**:
+- 🔍 从 GitHub 和 Awesome Lists 自动发现 Skills
+- 📊 智能质量评估（星标、文档、活跃度）
+- 🏷️ 自动分类（营销/开发/效率/自动化等）
+- 📝 生成精美的 Markdown 周报
+- 🚀 自动提交到 GitHub
+
+**输出示例**: `curated-reports/skill-curation-YYYY-MM-DD.md`
+
+---
+
+### 2. Discord 社区运营自动化工具 ✨ NEW (2026-04-04) 🔥
 自动化 Discord 社区运营，支持每日早报、踩坑实录、工具推荐等内容自动发布。
 
 ```bash
@@ -413,7 +438,8 @@ python seo_page_generator.py --type glossary --count 20
 ```
 miaoquai-openclaw-tools/
 ├── README.md
-├── discord-community-auto.sh # Discord 社区运营自动化 ✨ NEW 🔥
+├── openclaw-skill-curator.sh   # Skills 智能发现与推荐 ✨ NEW 🔥
+├── discord-community-auto.sh   # Discord 社区运营自动化 ✨ NEW 🔥
 ├── github-trending.sh      # GitHub Trending 监控
 ├── skill-discovery.sh      # Skill 发现器
 ├── content-helper.sh       # 内容生成助手
