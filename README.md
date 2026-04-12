@@ -4,6 +4,42 @@
 
 ## 工具列表
 
+### 0. OpenClaw Skills 依赖检查器 ✨ NEW (2026-04-13) 🔥
+自动检查并更新 OpenClaw Skills 的依赖版本，支持 NPM、PyPI、GitHub 工具依赖监控。
+
+```bash
+# 检查当前目录的依赖
+./skill-dependency-checker.sh check
+
+# 检查指定目录
+./skill-dependency-checker.sh check ./my-skill/
+
+# 检查今日 Trending 项目
+./skill-dependency-checker.sh trending
+
+# 生成依赖报告
+./skill-dependency-checker.sh report
+```
+
+**功能特性**:
+- 🔍 自动检测 NPM、PyPI、GitHub 依赖更新
+- 📊 智能版本比较和缓存机制
+- 🏷️ 支持批量检查和 Trending 项目监控
+- 📝 生成详细的 Markdown 检查报告
+- 🚀 支持 PR 自动提交功能
+- ⚡ 高性能缓存，避免重复请求
+
+**输出目录**:
+- `dependency-reports/` - 依赖检查报告
+- `.skill-cache/` - 缓存文件
+
+**支持的依赖类型**:
+- NPM (package.json)
+- PyPI (requirements.txt)
+- GitHub Tools (SKILL.md)
+
+---
+
 ### 1. OpenClaw Skill Curator ✨ NEW (2026-04-10) 🔥
 智能发现、评估和推荐 OpenClaw Skills，自动生成精选周报。
 
@@ -438,6 +474,7 @@ python seo_page_generator.py --type glossary --count 20
 ```
 miaoquai-openclaw-tools/
 ├── README.md
+├── skill-dependency-checker.sh   # Skills 依赖检查器 ✨ NEW 🔥
 ├── openclaw-skill-curator.sh   # Skills 智能发现与推荐 ✨ NEW 🔥
 ├── discord-community-auto.sh   # Discord 社区运营自动化 ✨ NEW 🔥
 ├── github-trending.sh      # GitHub Trending 监控
