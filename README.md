@@ -4,7 +4,44 @@
 
 ## 工具列表
 
-### 0. OpenClaw Skills 依赖检查器 ✨ NEW (2026-04-13) 🔥
+### 0. MCP Server 快速测试器 ✨ NEW (2026-04-14) 🔥🔥
+一键测试、验证和诊断 MCP (Model Context Protocol) 服务器，支持本地 stdio 和远程 SSE 服务器。
+
+```bash
+# 测试本地 MCP 服务器
+./mcp-server-tester.sh test ./my-mcp-server.js
+
+# 测试远程 SSE 服务器
+./mcp-server-tester.sh test-remote https://api.example.com/mcp
+
+# 验证配置文件
+./mcp-server-tester.sh validate ./mcp-config.json
+
+# 列出所有工具
+./mcp-server-tester.sh list-tools ./server.js
+
+# 调用特定工具
+./mcp-server-tester.sh call ./server.js search --params '{"query":"AI"}'
+
+# 发现常见 MCP 服务器
+./mcp-server-tester.sh discover
+
+# 生成详细报告
+./mcp-server-tester.sh report ./server.js
+```
+
+**功能特性**:
+- 🧪 自动测试 MCP 服务器连接
+- 🔍 支持 stdio 和 SSE 传输协议
+- ✅ 验证 MCP 配置文件
+- 📋 自动发现服务器工具列表
+- 🎯 支持工具调用测试
+- 📊 生成详细 Markdown 报告
+- 🔥 内置常见 MCP 服务器发现
+
+---
+
+### 2. OpenClaw Skills 依赖检查器 ✨ NEW (2026-04-13) 🔥
 自动检查并更新 OpenClaw Skills 的依赖版本，支持 NPM、PyPI、GitHub 工具依赖监控。
 
 ```bash
@@ -40,7 +77,7 @@
 
 ---
 
-### 1. OpenClaw Skill Curator ✨ NEW (2026-04-10) 🔥
+### 3. OpenClaw Skill Curator ✨ NEW (2026-04-10) 🔥
 智能发现、评估和推荐 OpenClaw Skills，自动生成精选周报。
 
 ```bash
@@ -65,7 +102,7 @@
 
 ---
 
-### 2. Discord 社区运营自动化工具 ✨ NEW (2026-04-04) 🔥
+### 4. Discord 社区运营自动化工具 ✨ NEW (2026-04-04) 🔥
 自动化 Discord 社区运营，支持每日早报、踩坑实录、工具推荐等内容自动发布。
 
 ```bash
@@ -95,7 +132,7 @@ export DISCORD_BOT_TOKEN="your_bot_token"
 export DISCORD_CHANNEL_ID="1483699648890802201"
 ```
 
-### 2. GitHub Trending 监控脚本
+### 5. GitHub Trending 监控脚本
 自动追踪 OpenClaw 相关的热门项目，帮助发现最新技术和工具。
 
 ```bash
@@ -103,7 +140,7 @@ export DISCORD_CHANNEL_ID="1483699648890802201"
 ./github-trending.sh
 ```
 
-### 2. Skill 发现器
+### 6. Skill 发现器
 从 ClawHub 和 GitHub 自动发现有用的 OpenClaw Skills。
 
 ```bash
@@ -111,7 +148,7 @@ export DISCORD_CHANNEL_ID="1483699648890802201"
 ./skill-discovery.sh "SEO marketing"
 ```
 
-### 3. 内容生成助手
+### 7. 内容生成助手
 辅助妙趣AI生成网站内容，包括新闻日报、术语百科等。
 
 ```bash
@@ -122,7 +159,7 @@ export DISCORD_CHANNEL_ID="1483699648890802201"
 ./content-helper.sh glossary "RAG"
 ```
 
-### 4. 自动提交工具
+### 8. 自动提交工具
 自动化 GitHub 提交流程，支持定时任务。
 
 ```bash
@@ -130,7 +167,7 @@ export DISCORD_CHANNEL_ID="1483699648890802201"
 ./auto-commit.sh "更新内容"
 ```
 
-### 5. SEO 分析器
+### 9. SEO 分析器
 分析网页 SEO 优化情况，检查meta、链接等。
 
 ```bash
@@ -138,7 +175,7 @@ export DISCORD_CHANNEL_ID="1483699648890802201"
 ./seo-analyzer.sh https://miaoquai.com
 ```
 
-### 6. 每日报告生成器 ✨ NEW
+### 10. 每日报告生成器 ✨ NEW
 自动生成妙趣AI每日运营报告，包括内容统计、GitHub Trending、网站健康检查等。
 
 ```bash
@@ -149,7 +186,7 @@ export DISCORD_CHANNEL_ID="1483699648890802201"
 # /var/www/miaoquai/reports/daily-YYYY-MM-DD.md
 ```
 
-### 7. Skills 健康检查器 ✨ NEW
+### 11. Skills 健康检查器 ✨ NEW
 检查 OpenClaw Skills 的健康状态、配置和安全问题。
 
 ```bash
@@ -157,7 +194,7 @@ export DISCORD_CHANNEL_ID="1483699648890802201"
 ./skill-health.sh
 ```
 
-### 8. SEO 页面生成器 ✨ NEW
+### 12. SEO 页面生成器 ✨ NEW
 Python工具，批量生成SEO优化的HTML页面（工具详情页、术语百科）。
 
 ```bash
@@ -171,7 +208,7 @@ python seo_page_generator.py --type glossary
 python seo_page_generator.py --type tools --output /var/www/miaoquai
 ```
 
-### 9. Cron 任务管理器 ✨ NEW
+### 13. Cron 任务管理器 ✨ NEW
 管理和监控 OpenClaw 定时任务的完整工具。
 
 ```bash
@@ -194,7 +231,7 @@ python seo_page_generator.py --type tools --output /var/www/miaoquai
 ./cron-manager.sh run <job_id>
 ```
 
-### 9. OpenClaw 生态系统监控器 ✨ NEW
+### 14. OpenClaw 生态系统监控器 ✨ NEW
 监控与OpenClaw相关的开源项目和Skills生态，发现新机会。
 
 ```bash
@@ -211,7 +248,7 @@ python seo_page_generator.py --type tools --output /var/www/miaoquai
 - langchain-ai/open-swe - 异步编码Agent
 - shareAI-lab/learn-claude-code - Claude Code学习资源
 
-### 10. Skills 模板生成器 ✨ NEW
+### 15. Skills 模板生成器 ✨ NEW
 快速创建符合规范的OpenClaw Skills模板。
 
 ```bash
@@ -227,7 +264,7 @@ python seo_page_generator.py --type tools --output /var/www/miaoquai
 
 **支持分类**: marketing, development, productivity, automation, creative, research
 
-### 11. Skills 效果分析器 ✨ NEW
+### 16. Skills 效果分析器 ✨ NEW
 分析 Skills 使用效果，提供优化建议和评分。
 
 ```bash
@@ -254,7 +291,7 @@ python seo_page_generator.py --type tools --output /var/www/miaoquai
 - 代码行数统计
 - 综合评分 (0-100)
 
-### 12. Agent 框架对比器 ✨ NEW (2026-03-25)
+### 17. Agent 框架对比器 ✨ NEW (2026-03-25)
 比较 OpenClaw 与 DeerFlow、ruflo、Claude Code 等 AI Agent 框架的功能差异。
 
 ```bash
@@ -277,7 +314,7 @@ python seo_page_generator.py --type tools --output /var/www/miaoquai
 - 📰 **mvanhorn/last30days-skill** - AI研究技能 (5,443 ⭐)
 - 🔷 **hesreallyhim/awesome-claude-code** - Claude Code 技能列表
 
-### 14. GitHub Trending 监控器 ✨ NEW
+### 18. GitHub Trending 监控器 ✨ NEW
 实时监控 GitHub Trending 上的 OpenClaw 相关项目，生成每日趋势报告。
 
 ```bash
@@ -288,7 +325,7 @@ python seo_page_generator.py --type tools --output /var/www/miaoquai
 # /var/www/miaoquai/reports/trending-YYYY-MM-DD.md
 ```
 
-### 15. Skills 使用追踪器 ✨ NEW
+### 19. Skills 使用追踪器 ✨ NEW
 追踪本地 OpenClaw Skills 的使用情况，生成使用统计和效果分析报告。
 
 ```bash
@@ -305,7 +342,7 @@ python seo_page_generator.py --type tools --output /var/www/miaoquai
 # /var/www/miaoquai/reports/skill-usage-YYYY-MM-DD.md
 ```
 
-### 16. AI News RSS 聚合器 ✨ NEW (2026-03-27)
+### 20. AI News RSS 聚合器 ✨ NEW (2026-03-27)
 自动抓取各大AI源的RSS新闻，生成内容摘要和报告。
 
 ```bash
@@ -331,7 +368,7 @@ python seo_page_generator.py --type tools --output /var/www/miaoquai
 - TechCrunch AI
 - Wired AI
 
-### 17. 社交媒体内容聚合器 ✨ NEW (2026-03-28)
+### 21. 社交媒体内容聚合器 ✨ NEW (2026-03-28)
 自动收集 Twitter/X、GitHub 等平台的 OpenClaw 相关内容，生成适合妙趣网站发布的结构化摘要。
 
 ```bash
@@ -354,7 +391,7 @@ python seo_page_generator.py --type tools --output /var/www/miaoquai
 - 自动化 Markdown 报告生成
 - 可选 Discord/Webhook 推送
 
-### 18. Trending Skill 生成器 ✨ NEW (2026-03-29)
+### 22. Trending Skill 生成器 ✨ NEW (2026-03-29)
 根据 GitHub Trending 自动生成 OpenClaw Skills，帮助快速了解热门 AI 项目。
 
 ```bash
@@ -380,7 +417,7 @@ python seo_page_generator.py --type tools --output /var/www/miaoquai
 - 自动分类 (development/marketing/research)
 - 批量生成多个项目的 Skill 模板
 
-### 19. Skill Showcase 生成器 ✨ NEW (2026-04-01)
+### 23. Skill Showcase 生成器 ✨ NEW (2026-04-01)
 快速生成 OpenClaw Skill 展示页面，用于文档和营销。
 
 ```bash
@@ -400,7 +437,7 @@ python seo_page_generator.py --type tools --output /var/www/miaoquai
 - 自动添加妙趣风格的设计元素
 - 包含安装指南和使用示例
 
-### 20. OpenClaw Agent Starter Kit ✨ NEW (2026-04-02) 🔥
+### 24. OpenClaw Agent Starter Kit ✨ NEW (2026-04-02) 🔥
 一键创建标准化的 OpenClaw Agent 项目，快速搭建你的 AI Agent。
 
 ```bash
@@ -474,6 +511,7 @@ python seo_page_generator.py --type glossary --count 20
 ```
 miaoquai-openclaw-tools/
 ├── README.md
+├── mcp-server-tester.sh          # MCP Server 快速测试器 ✨ NEW 🔥🔥
 ├── skill-dependency-checker.sh   # Skills 依赖检查器 ✨ NEW 🔥
 ├── openclaw-skill-curator.sh   # Skills 智能发现与推荐 ✨ NEW 🔥
 ├── discord-community-auto.sh   # Discord 社区运营自动化 ✨ NEW 🔥
