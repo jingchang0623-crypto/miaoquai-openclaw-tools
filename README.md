@@ -4,7 +4,47 @@
 
 ## 工具列表
 
-### 0. MCP Server 快速测试器 ✨ NEW (2026-04-14) 🔥🔥
+### 0. Agent 记忆健康检查器 ✨ NEW (2026-04-15) 🔥🔥🔥
+检查 OpenClaw Agent 的记忆文件健康度，发现膨胀 SOUL.md、孤立记忆、过期每日记录，并给出优化建议。支持自动化报告和定时看门狗模式。
+
+```bash
+# 全面健康检查
+./agent-memory-health-checker.sh check ~/.openclaw/miaoquai-workspace
+
+# 归档过期记忆
+./agent-memory-health-checker.sh archive
+
+# 生成报告
+./agent-memory-health-checker.sh report
+
+# 持续监控（每30分钟）
+./agent-memory-health-checker.sh watchdog 1800
+
+# 设置每日定时检查
+./agent-memory-health-checker.sh cron
+```
+
+**功能特性**:
+- 🧠 6 维度记忆健康分析（膨胀/重量/连续性/交叉引用/冗余/安全）
+- 📊 100 分制评分系统（A+ 到 D 等级）
+- 📦 自动归档过期每日记忆
+- 📝 Markdown + JSON 双格式报告
+- 🐕 看门狗持续监控模式
+- ⏰ 内置 cron 定时任务设置
+- 🔒 敏感信息泄露检测
+- 🔗 文件间交叉引用完整性检查
+
+**检查维度**:
+1. SOUL.md 膨胀度（建议 < 10KB）
+2. MEMORY.md 重量（建议 < 50KB）
+3. 每日记忆连续性覆盖率
+4. 核心文件交叉引用完整性
+5. 内容冗余度检测
+6. API Key / Token 安全审查
+
+---
+
+### 1. MCP Server 快速测试器 ✨ NEW (2026-04-14) 🔥🔥
 一键测试、验证和诊断 MCP (Model Context Protocol) 服务器，支持本地 stdio 和远程 SSE 服务器。
 
 ```bash
@@ -511,6 +551,7 @@ python seo_page_generator.py --type glossary --count 20
 ```
 miaoquai-openclaw-tools/
 ├── README.md
+├── agent-memory-health-checker.sh  # Agent 记忆健康检查器 ✨ NEW 🔥🔥🔥
 ├── mcp-server-tester.sh          # MCP Server 快速测试器 ✨ NEW 🔥🔥
 ├── skill-dependency-checker.sh   # Skills 依赖检查器 ✨ NEW 🔥
 ├── openclaw-skill-curator.sh   # Skills 智能发现与推荐 ✨ NEW 🔥
@@ -551,9 +592,25 @@ miaoquai-openclaw-tools/
 - gh (GitHub CLI)
 - Coreutils
 
+## 🔥 今日 Trending 发现 (2026-04-15)
+
+| 项目 | ⭐ Stars | 描述 |
+|------|---------|------|
+| [VoltAgent/awesome-openclaw-skills](https://github.com/VoltAgent/awesome-openclaw-skills) | 46,022 | OpenClaw Skills 大全，5400+ 技能 |
+| [farion1231/cc-switch](https://github.com/farion1231/cc-switch) | 44,682 | Claude Code/Codex/OpenClaw 跨平台桌面助手 |
+| [CherryHQ/cherry-studio](https://github.com/CherryHQ/cherry-studio) | 43,485 | AI 生产力工作室 |
+| [zhayujie/CowAgent](https://github.com/zhayujie/CowAgent) | 43,179 | 微信超级 AI 助理，支持 Skills |
+| [safishamsi/graphify](https://github.com/safishamsi/graphify) | 26,314 | AI 编码助手 Skill |
+| [kepano/obsidian-skills](https://github.com/kepano/obsidian-skills) | 23,918 | Obsidian Agent Skills |
+| [volcengine/OpenViking](https://github.com/volcengine/OpenViking) | 22,272 | Agent 专用上下文数据库 |
+| [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill) | 21,864 | AI Agent 跨平台研究技能 |
+| [NevaMind-AI/memU](https://github.com/NevaMind-AI/memU) | 13,343 | 24/7 Agent 记忆管理 |
+| [qwibitai/nanoclaw](https://github.com/qwibitai/nanoclaw) | 27,273 | 轻量级 OpenClaw 替代品 |
+
 ## 相关项目
 
-- [awesome-openclaw-skills](https://github.com/VoltAgent/awesome-openclaw-skills) - OpenClaw Skills 大全
+- [awesome-openclaw-skills](https://github.com/VoltAgent/awesome-openclaw-skills) - OpenClaw Skills 大全 (46k+ ⭐)
+- [NevaMind-AI/memU](https://github.com/NevaMind-AI/memU) - Agent 记忆管理 (13k+ ⭐)
 - [OpenClaw 官方](https://github.com/openclaw/openclaw) - OpenClaw 主仓库
 
 ## 网站
