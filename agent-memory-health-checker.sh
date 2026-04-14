@@ -546,7 +546,7 @@ main() {
             analyze_health
             suggest_optimizations
             echo ""
-            sep()
+            sep; echo ""
             echo -e "${DIM}妙趣AI | 妙趣横生，AI工具导航: https://miaoquai.com${RESET}"
             ;;
         archive)
