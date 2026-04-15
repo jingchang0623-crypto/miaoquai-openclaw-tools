@@ -4,7 +4,38 @@
 
 ## 工具列表
 
-### 0. Agent 记忆健康检查器 ✨ NEW (2026-04-15) 🔥🔥🔥
+### 0. PR 机会发现器 ✨ NEW (2026-04-16) 🔥🔥🔥
+自动扫描 OpenClaw 核心仓库的开放 issues，发现适合贡献的 PR 机会，支持交互式浏览和报告生成。
+
+```bash
+# 快速扫描并生成报告
+./pr-opportunity-finder.sh
+
+# 交互式浏览
+./pr-opportunity-finder.sh -i
+
+# 显示所有开放 issues
+./pr-opportunity-finder.sh -a
+```
+
+**功能特性**:
+- 🔍 自动扫描 9 个 OpenClaw 核心仓库
+- 🏷️ 智能识别 good first issue / help wanted / enhancement
+- 📊 生成 Markdown 格式的机会报告
+- 🖥️ 交互式模式逐个浏览
+- 💾 API 响应缓存（15分钟有效）
+- 🚫 自动过滤 PR，只显示 Issue
+
+**扫描仓库**:
+- openclaw/openclaw (358k ⭐)
+- openclaw/skills (4.1k ⭐)
+- openclaw/clawhub (8k ⭐)
+- VoltAgent/awesome-openclaw-skills (46k ⭐)
+- hesamsheikh/awesome-openclaw-usecases (29.6k ⭐)
+
+---
+
+### 1. Agent 记忆健康检查器 ✨ NEW (2026-04-15) 🔥🔥🔥
 检查 OpenClaw Agent 的记忆文件健康度，发现膨胀 SOUL.md、孤立记忆、过期每日记录，并给出优化建议。支持自动化报告和定时看门狗模式。
 
 ```bash
@@ -551,6 +582,7 @@ python seo_page_generator.py --type glossary --count 20
 ```
 miaoquai-openclaw-tools/
 ├── README.md
+├── pr-opportunity-finder.sh    # PR 机会发现器 ✨ NEW 🔥🔥🔥
 ├── agent-memory-health-checker.sh  # Agent 记忆健康检查器 ✨ NEW 🔥🔥🔥
 ├── mcp-server-tester.sh          # MCP Server 快速测试器 ✨ NEW 🔥🔥
 ├── skill-dependency-checker.sh   # Skills 依赖检查器 ✨ NEW 🔥
@@ -592,20 +624,16 @@ miaoquai-openclaw-tools/
 - gh (GitHub CLI)
 - Coreutils
 
-## 🔥 今日 Trending 发现 (2026-04-15)
+## 🔥 今日 Trending 发现 (2026-04-16)
 
 | 项目 | ⭐ Stars | 描述 |
 |------|---------|------|
-| [VoltAgent/awesome-openclaw-skills](https://github.com/VoltAgent/awesome-openclaw-skills) | 46,022 | OpenClaw Skills 大全，5400+ 技能 |
-| [farion1231/cc-switch](https://github.com/farion1231/cc-switch) | 44,682 | Claude Code/Codex/OpenClaw 跨平台桌面助手 |
-| [CherryHQ/cherry-studio](https://github.com/CherryHQ/cherry-studio) | 43,485 | AI 生产力工作室 |
-| [zhayujie/CowAgent](https://github.com/zhayujie/CowAgent) | 43,179 | 微信超级 AI 助理，支持 Skills |
-| [safishamsi/graphify](https://github.com/safishamsi/graphify) | 26,314 | AI 编码助手 Skill |
-| [kepano/obsidian-skills](https://github.com/kepano/obsidian-skills) | 23,918 | Obsidian Agent Skills |
-| [volcengine/OpenViking](https://github.com/volcengine/OpenViking) | 22,272 | Agent 专用上下文数据库 |
-| [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill) | 21,864 | AI Agent 跨平台研究技能 |
-| [NevaMind-AI/memU](https://github.com/NevaMind-AI/memU) | 13,343 | 24/7 Agent 记忆管理 |
-| [qwibitai/nanoclaw](https://github.com/qwibitai/nanoclaw) | 27,273 | 轻量级 OpenClaw 替代品 |
+| [VoltAgent/awesome-openclaw-skills](https://github.com/VoltAgent/awesome-openclaw-skills) | 46,158 | OpenClaw Skills 大全，5400+ 技能 |
+| [jeremylongshore/claude-code-plugins-plus-skills](https://github.com/jeremylongshore/claude-code-plugins-plus-skills) | 1,947 | 340 plugins + 1367 agent skills |
+| [openakita/openakita](https://github.com/openakita/openakita) | 1,630 | 开源 AI 助手框架 |
+| [softaworks/agent-toolkit](https://github.com/softaworks/agent-toolkit) | 1,536 | AI coding agents 技能合集 |
+| [skalesapp/skales](https://github.com/skalesapp/skales) | 799 | 本地 AI Desktop Agent |
+| [browserwing/browserwing](https://github.com/browserwing/browserwing) | 1,210 | 浏览器动作转 MCP 命令 |
 
 ## 相关项目
 
